@@ -60,3 +60,127 @@ transform: translate(4px ,0px );
     color: var(--orange55);
     transition-delay:0ms;
 }
+
+
+.sec-2 .start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-right: 60px;
+    font-size: 44px;
+    
+}
+
+
+.sec-2 .start img{
+    width: 60px;
+}
+.sec-2 .end{
+    padding: 60px 0px 60px 60px ;
+}
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.input label{
+    color: white;
+    font-size: 16px;
+
+}
+.input input{
+    background-color:var(--threeground) ;
+    border-radius: 6px;
+    border: 1.5px solid var(--secondground);
+    border-radius: 6px ;
+    padding: 16px;
+    color: white;
+    font-size: 14px;
+}
+.input input:focus,
+textarea:focus{
+    outline:   solid 3px var(--threeground)
+}
+
+.cont{
+    margin-bottom:30px ;
+}
+
+.innerinput{
+    gap: 12px;
+}
+.dropdown-toggle{
+    background-color: var(--threeground);
+    border: 1.5px solid var(--secondground);
+    
+}
+.dropdown-item{
+    background-color: var(--threeground) !important;
+    border-top: 1.5px solid var(--secondground);
+    transition: 300ms !important;
+}
+
+.dropdown-item:hover{
+    color: var(--orange55) !important;
+    border-bottom: 1.5px solid var(--orange55);
+}
+.dropdown-menu{
+    height: 300px !important;
+    overflow: scroll;
+}
+.flags{
+    border-radius: 50%;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+   
+    
+
+  } 
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: var(--orange55);
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .loader-cont{
+    position: fixed;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
