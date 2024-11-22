@@ -7,9 +7,10 @@ background-color: var(--backgroound);
 :root{
     --backgroound:#141414;
     --secondground:#262626;
+    --threeground:#1A1A1A;
     --gray60:#98989A;
     --orange55:#FFD11A;
-    --gray50:#7E7E81;
+    --gray50:#6a6a6b;
 }
 
 .container{
@@ -62,15 +63,15 @@ scale: 1.1;
     font-size: 14px;
 }
 .navbar{
-    background-color: var(--secondground) !important;
+    background-color: var(--threeground) !important;
   
 }
 header {
-    border-top: 1px solid var(--gray50) ;
-    border-bottom: 1px solid var(--gray50);
+    border-top: 1.5px solid var(--secondground) ;
+    border-bottom: 1.5px solid var(--secondground);
     position: sticky ;
     top: 0px;
-    background-color: var(--secondground);
+    background-color: var(--threeground);
 }
 
 a{
