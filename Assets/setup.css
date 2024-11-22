@@ -38,7 +38,44 @@ border: var(--orange55) 1px solid;
     color: white !important;
 }
 
+*{
+    font-family:Inter;
+}
 
+.fa-angles-right{
+    color: var(--orange55);
+    transition: 400ms;
+}
+.notifecation{
+    cursor: pointer;
+}
+
+.notifecation:hover .fa-angles-right {
+transform: translate(10px,0px );
+scale: 1.1;
+
+}
+.notifecation:hover p{
+    text-decoration: underline;
+}
+.notifecation p{
+    font-size: 14px;
+}
+.navbar{
+    background-color: var(--secondground) !important;
+  
+}
+header {
+    border-top: 1px solid var(--gray50) ;
+    border-bottom: 1px solid var(--gray50);
+    position: sticky ;
+    top: 0px;
+    background-color: var(--secondground);
+}
+
+a{
+    color: white !important;
+}
 
 
 @media screen and (max-width:760px) {
